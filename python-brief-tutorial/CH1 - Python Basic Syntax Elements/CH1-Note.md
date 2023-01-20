@@ -895,3 +895,9 @@ Output：
 
 
     '\n欢迎\n订阅\ntimerring\n的\n专栏\n'
+
+
+
+
+
+[返回首页](https://github.com/timerring/pytorch-for-beginners)

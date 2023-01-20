@@ -255,7 +255,7 @@ with open("三国演义片头曲_gbk.txt", "r", encoding="gbk") as f:
 ​    
 ​    一壶浊酒喜相逢。
 ​    
-    古今多少事，都付笑谈中。
+​    古今多少事，都付笑谈中。
 
 
 ​    
@@ -288,7 +288,7 @@ with open("三国演义片头曲_gbk.txt", "r", encoding="gbk") as f:
 ​    
 ​    一壶浊酒喜相逢。
 ​    
-    古今多少事，都付笑谈中。
+​    古今多少事，都付笑谈中。
 
 
 ​    
@@ -1060,3 +1060,8 @@ fun3.f3()
 
     导入fun3成功
 
+
+
+
+
+[返回首页](https://github.com/timerring/pytorch-for-beginners)

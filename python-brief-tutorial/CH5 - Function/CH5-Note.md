@@ -1001,3 +1001,7 @@ n
 也包含加油、启动、加速、刹车、拐弯、鸣喇叭、到站、维修等一系列的“方法”。  
 
 通过对象的行为表达相应的事件
+
+
+
+[返回首页](https://github.com/timerring/pytorch-for-beginners)

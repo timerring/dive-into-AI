@@ -2128,3 +2128,7 @@ XGBoost损失函数对误差部分做二阶泰勒展开，更加准确，更快�
 先建立几个简单的模型进行训练，第二级学习器会基于前级模型的预测结果进行再训练
 
 【4】神经网络
+
+
+
+[返回首页](https://github.com/timerring/pytorch-for-beginners)

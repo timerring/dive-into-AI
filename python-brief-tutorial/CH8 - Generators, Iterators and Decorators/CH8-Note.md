@@ -1746,3 +1746,8 @@ f1()
     f1 run
     f1 函数运行用时1.00秒
 
+
+
+
+
+[返回首页](https://github.com/timerring/pytorch-for-beginners)

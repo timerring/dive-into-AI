@@ -668,3 +668,6 @@ my_electric_car.bettery.get_remainder_range()           # 获取当前剩余可�
 
     当前电量还可以继续驾驶 250 公里
 
+
+
+[返回首页](https://github.com/timerring/pytorch-for-beginners)

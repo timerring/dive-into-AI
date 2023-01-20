@@ -2251,3 +2251,8 @@ np.std(x)
 
     1.0110318112965473
 
+
+
+
+
+[返回首页](https://github.com/timerring/pytorch-for-beginners)
