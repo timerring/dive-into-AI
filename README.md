@@ -10,7 +10,7 @@
 
 | Articles                                                     | code                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [CH1 - python基本语法元素](https://github.com/timerring/pytorch-for-beginners/blob/main/python-brief-tutorial/CH1 - Python Basic Syntax Elements/CH1-Note.md) | [code](https://github.com/timerring/pytorch-for-beginners/blob/main/python-brief-tutorial/CH1 - Python Basic Syntax Elements/CH1-Code.ipynb) |
+| [CH1 - python基本语法元素](https://github.com/timerring/pytorch-for-beginners/blob/main/python-brief-tutorial/CH1%20-%20Python%20Basic%20Syntax%20Elements/CH1-Note.md) | [code](https://github.com/timerring/pytorch-for-beginners/blob/main/python-brief-tutorial/CH1%20-%20Python%20Basic%20Syntax%20Elements/CH1-Code.ipynb) |
 | [CH2 - python基本数据类型](https://github.com/timerring/pytorch-for-beginners/blob/main/python-brief-tutorial/CH2 - Python Basic Data Types/CH2-Note.md) | [code](https://github.com/timerring/pytorch-for-beginners/blob/main/python-brief-tutorial/CH2 - Python Basic Data Types/CH2-Code.ipynb) |
 | [CH3 - python组合数据类型](https://github.com/timerring/pytorch-for-beginners/blob/main/python-brief-tutorial/CH3 - Python Composite Data Types/CH3-Note.md) | [code](https://github.com/timerring/pytorch-for-beginners/blob/main/python-brief-tutorial/CH3 - Python Composite Data Types/CH3-Code.ipynb) |
 | [CH4 - 程序控制结构](https://github.com/timerring/pytorch-for-beginners/blob/main/python-brief-tutorial/CH4 - Program Control Structure/CH4-Note.md) | [code](https://github.com/timerring/pytorch-for-beginners/blob/main/python-brief-tutorial/CH4 - Program Control Structure/CH4-Code.ipynb) |
