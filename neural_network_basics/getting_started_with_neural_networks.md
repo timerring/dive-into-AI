@@ -1,3 +1,31 @@
+- [神经网络入门](#神经网络入门)
+  - [人工神经元](#人工神经元)
+  - [多层感知机](#多层感知机)
+  - [激活函数](#激活函数)
+    - [Sigmoid（S型）](#sigmoids型)
+    - [Tanh（双曲正切）](#tanh双曲正切)
+    - [ReLU（修正线性单元）](#relu修正线性单元)
+  - [反向传播（Back Propagation）](#反向传播back-propagation)
+    - [前向传播](#前向传播)
+    - [反向传播](#反向传播)
+    - [梯度下降法（Gradient Decent）](#梯度下降法gradient-decent)
+    - [学习率（Learning Rate）](#学习率learning-rate)
+  - [损失函数（Loss Function）](#损失函数loss-function)
+    - [损失函数(Loss Function)](#损失函数loss-function-1)
+    - [代价函数 (Cost Function)](#代价函数-cost-function)
+    - [目标函数(Objective Function)](#目标函数objective-function)
+    - [两种常见损失函数](#两种常见损失函数)
+      - [MSE](#mse)
+      - [CE](#ce)
+        - [softmax](#softmax)
+  - [权值初始化（Initialization）](#权值初始化initialization)
+    - [随机初始化法](#随机初始化法)
+    - [自适应标准差](#自适应标准差)
+  - [正则化（Regularization）](#正则化regularization)
+    - [L2 Regularization](#l2-regularization)
+    - [Dropout](#dropout)
+
+
 # 神经网络入门
 
 + 神经网络与多层感知机：基础知识，激活函数、反向传播、损失函数、权值初始化和正则化
