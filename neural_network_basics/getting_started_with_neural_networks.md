@@ -65,7 +65,7 @@ $$
 
 第一个神经网络：1958年，计算机科学家Rosenblatt提出的Perceptron（感知机）
 $$
-o\,=\,\sigma(\langle\mathbf{w},\mathbf{x}\rangle+b)
+o=\sigma(\langle\mathbf{w},\mathbf{x}\rangle+b)
 $$
 
 
