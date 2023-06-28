@@ -258,6 +258,7 @@ $$
 **学习率**（Learning Rate）：控制更新步长
 
 沿梯度**负方向更新**：
+
 $$
 \boldsymbol{w}_{\mathrm{i}+1}=\boldsymbol{w}_{\mathrm{i}}-\boldsymbol{g}(\boldsymbol{w}_{\mathrm{i}})
 $$
