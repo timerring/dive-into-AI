@@ -31,13 +31,15 @@ Coming soon...
 
 ## neural_network_basics
 
-| articles | content |
-| -------- | ------- |
-|          |         |
+| articles                                                     | content                                                      |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [神经网络入门](https://github.com/timerring/dive-into-AI/blob/main/neural_network_basics/getting_started_with_neural_networks.md#神经网络入门) | [人工神经元](https://github.com/timerring/dive-into-AI/blob/main/neural_network_basics/getting_started_with_neural_networks.md#人工神经元) \| [多层感知机](https://github.com/timerring/dive-into-AI/blob/main/neural_network_basics/getting_started_with_neural_networks.md#多层感知机) \| [激活函数](https://github.com/timerring/dive-into-AI/blob/main/neural_network_basics/getting_started_with_neural_networks.md#激活函数) \| [反向传播（Back Propagation）](https://github.com/timerring/dive-into-AI/blob/main/neural_network_basics/getting_started_with_neural_networks.md#反向传播back-propagation) \| [损失函数（Loss Function）](https://github.com/timerring/dive-into-AI/blob/main/neural_network_basics/getting_started_with_neural_networks.md#损失函数loss-function) \| [权值初始化（Initialization）](https://github.com/timerring/dive-into-AI/blob/main/neural_network_basics/getting_started_with_neural_networks.md#权值初始化initialization) \| [正则化（Regularization）](https://github.com/timerring/dive-into-AI/blob/main/neural_network_basics/getting_started_with_neural_networks.md#正则化regularization) |
 
 
 
-## 致谢
+
+
+## 参考
 
 学习参考：Python数据科学入门
 
@@ -46,3 +48,27 @@ Coming soon...
 1. 本仓库针对内容进行了一定程度上的精简，去除了冗余。同时对一些相关的知识进行了适当的补充。
 2. 如果您在阅读的过程中存在疑问或发现错误，欢迎提Issues交流订正。
 3. 如果遇到图片无法加载的情况，可以考虑使用代理，或者访问[博客网站](https://blog.csdn.net/m0_52316372/category_11988214.html) 。
+
+### ChangeLog
+
+- v1.1 python简明教程更新完毕
+- v1.0 基础结构
+
+### TODO
+
+- docsify部署
+- 欢迎issue交流讨论，PR订正。
+
+## 关注更多
+
+<div align=center>
+<p>扫描下方二维码关注公众号：AIShareLab</p>
+<img src="resources/qrcode.jpg" width = "180" height = "180">
+</div>
+
+
+&emsp;&emsp;AIShareLab，一个关注CV、AI、区块链、Web开发、硬件开发、5G通信等领域的热“AI”分享的社群，微信搜索公众号 AIShareLab 一起交流更多相关知识，前沿算法，Paper解读，项目源码，面经总结。﻿
+
+## LICENSE
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://img.shields.io/badge/license-CC BY--NC--SA 4.0-lightgrey" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
