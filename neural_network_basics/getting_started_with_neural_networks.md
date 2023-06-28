@@ -77,6 +77,8 @@ $$
 $$
 
 引发了第一波神经网络的热潮，但感知机的致命缺点是：Minsky在1969年证明Perceptron无法解决异或问题。根源在于，二维层面上神经网络是一条直线。无法划分异或的区间。
+
+
 $$
 \begin{array}{rlr}
 0 & =\sigma(\mathrm{x}_{0} \mathrm{w}_{0}+\mathrm{x}_{1} \mathrm{w}_{1}+\mathrm{b}) \\
@@ -86,6 +88,8 @@ $$
 \mathrm{y} & =  \mathrm{kx}+\mathrm{b}
 \end{array}
 $$
+
+
 ![](https://raw.githubusercontent.com/timerring/scratchpad2023/main/2023/image-20230528223959705.png)
 
 ## 多层感知机
@@ -101,13 +105,19 @@ $$
 隐藏层的权重矩阵是  $W_{5 \times 3} $
 
 前向传播:（以下方便起见省略了偏置）
+
+
 $$
 \begin{array}{l}
 \sigma(\mathrm{X}_{1 \times 4} \cdot \mathrm{W}_{\mathrm{h}})=\mathrm{H}_{1 \times 5} \\
 \sigma(\mathrm{H}_{1 \times 5} \cdot \mathrm{W}_{\mathrm{o} \times 3})=\mathrm{O}_{1 \times 3}
 \end{array}
 $$
+
+
 整个过程如果没有激活函数，网络退化为单层网络，下面证明：
+
+
 $$
 \begin{aligned}
 \boldsymbol{H} & =\boldsymbol{X} \boldsymbol{W}_{\mathrm{h}}+\boldsymbol{b}_{\mathrm{h}} \\
@@ -115,15 +125,21 @@ $$
 \boldsymbol{O} & =(\boldsymbol{X} \boldsymbol{W}_{\mathrm{h}}+\boldsymbol{b}_{\mathrm{h}}) \boldsymbol{W}_{\mathrm{o}}+\boldsymbol{b}_{\mathrm{o}}=\boldsymbol{X} \boldsymbol{W}_{\mathrm{h}} \boldsymbol{W}_{\mathrm{o}}+\boldsymbol{b}_{\mathrm{h}} \boldsymbol{W}_{\mathrm{o}}+\boldsymbol{b}_{\mathrm{c}}
 \end{aligned}
 $$
+
+
 可见，最终网络还是可以化简替代，退化为XW+b的单层网络。
 
 当隐藏层加入**激活函数，可避免网络退化**
+
+
 $$
 \begin{array}{l}
 \mathbf{h}=\sigma(\mathbf{W}_{1} \mathbf{x}+\mathbf{b}_{1}) \\
 \mathbf{0}=\mathbf{w}_{2}^{\mathrm{T}} \mathbf{h}+\mathbf{b}_{2}
 \end{array}
 $$
+
+
 
 ## 激活函数
 
