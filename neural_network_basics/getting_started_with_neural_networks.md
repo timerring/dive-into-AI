@@ -57,7 +57,7 @@ Artificial Neural Unit
 
 1943年心理学家W.S. McCulloch和数理逻辑学家W.Pitts研究出人工神经元,称为M-Р模型。
 $$
-f\left(\sum_{i=1}^{N} I_{i} \cdot W_{i}\right)=y
+f(\sum_{i=1}^{N} I_{i} \cdot W_{i})=y
 $$
 人工神经网络： 大量神经元以某种连接方式构成的机器学习模型
 
@@ -68,17 +68,18 @@ $$
 o\,=\,\sigma(\langle\mathbf{w},\mathbf{x}\rangle+b)
 $$
 
+
 $$
-\sigma(x)=\left\{\begin{array}{ll}
+\sigma(x)=\{\begin{array}{ll}
 1 & \text { if } x>0 \\
 0 & \text { otherwise }
-\end{array}\right.
+\end{array}
 $$
 
 引发了第一波神经网络的热潮，但感知机的致命缺点是：Minsky在1969年证明Perceptron无法解决异或问题。根源在于，二维层面上神经网络是一条直线。无法划分异或的区间。
 $$
 \begin{array}{rlr}
-0 & =\sigma\left(\mathrm{x}_{0} \mathrm{w}_{0}+\mathrm{x}_{1} \mathrm{w}_{1}+\mathrm{b}\right) \\
+0 & =\sigma(\mathrm{x}_{0} \mathrm{w}_{0}+\mathrm{x}_{1} \mathrm{w}_{1}+\mathrm{b}) \\
 0 & =\mathrm{x}_{0} \mathrm{w}_{0}+\mathrm{x}_{1} \mathrm{w}_{1}+\mathrm{b} \\
 \mathrm{x}_{1} \mathrm{w}_{1} & =0-\mathrm{x}_{0} \mathrm{w}_{0}-\mathrm{b} \\
 \mathrm{x}_{1} & =  -\frac{\mathrm{w}_{0}}{\mathrm{w}_{1}} \mathrm{x}_{0}-\frac{\mathrm{b}}{\mathrm{w}_{1}} \\
@@ -102,8 +103,8 @@ $$
 前向传播:（以下方便起见省略了偏置）
 $$
 \begin{array}{l}
-\sigma\left(\mathrm{X}_{1 \times 4} \cdot \mathrm{W}_{\mathrm{h}}\right)=\mathrm{H}_{1 \times 5} \\
-\sigma\left(\mathrm{H}_{1 \times 5} \cdot \mathrm{W}_{\mathrm{o} \times 3}\right)=\mathrm{O}_{1 \times 3}
+\sigma(\mathrm{X}_{1 \times 4} \cdot \mathrm{W}_{\mathrm{h}})=\mathrm{H}_{1 \times 5} \\
+\sigma(\mathrm{H}_{1 \times 5} \cdot \mathrm{W}_{\mathrm{o} \times 3})=\mathrm{O}_{1 \times 3}
 \end{array}
 $$
 整个过程如果没有激活函数，网络退化为单层网络，下面证明：
@@ -111,7 +112,7 @@ $$
 \begin{aligned}
 \boldsymbol{H} & =\boldsymbol{X} \boldsymbol{W}_{\mathrm{h}}+\boldsymbol{b}_{\mathrm{h}} \\
 \boldsymbol{O} & =\boldsymbol{H} \boldsymbol{W}_{\mathrm{o}}+\boldsymbol{b}_{\mathrm{o}} \\
-\boldsymbol{O} & =\left(\boldsymbol{X} \boldsymbol{W}_{\mathrm{h}}+\boldsymbol{b}_{\mathrm{h}}\right) \boldsymbol{W}_{\mathrm{o}}+\boldsymbol{b}_{\mathrm{o}}=\boldsymbol{X} \boldsymbol{W}_{\mathrm{h}} \boldsymbol{W}_{\mathrm{o}}+\boldsymbol{b}_{\mathrm{h}} \boldsymbol{W}_{\mathrm{o}}+\boldsymbol{b}_{\mathrm{c}}
+\boldsymbol{O} & =(\boldsymbol{X} \boldsymbol{W}_{\mathrm{h}}+\boldsymbol{b}_{\mathrm{h}}) \boldsymbol{W}_{\mathrm{o}}+\boldsymbol{b}_{\mathrm{o}}=\boldsymbol{X} \boldsymbol{W}_{\mathrm{h}} \boldsymbol{W}_{\mathrm{o}}+\boldsymbol{b}_{\mathrm{h}} \boldsymbol{W}_{\mathrm{o}}+\boldsymbol{b}_{\mathrm{c}}
 \end{aligned}
 $$
 可见，最终网络还是可以化简替代，退化为XW+b的单层网络。
@@ -119,7 +120,7 @@ $$
 当隐藏层加入**激活函数，可避免网络退化**
 $$
 \begin{array}{l}
-\mathbf{h}=\sigma\left(\mathbf{W}_{1} \mathbf{x}+\mathbf{b}_{1}\right) \\
+\mathbf{h}=\sigma(\mathbf{W}_{1} \mathbf{x}+\mathbf{b}_{1}) \\
 \mathbf{0}=\mathbf{w}_{2}^{\mathrm{T}} \mathbf{h}+\mathbf{b}_{2}
 \end{array}
 $$
@@ -171,11 +172,11 @@ $$
 $$
 \begin{array}{c}
 \text { Relu }=\max (0, x) \\
-g^{\prime}(z)=\left\{\begin{array}{ll}
+g^{\prime}(z)=\{\begin{array}{ll}
 1 & \text { if } \mathrm{z}>0 \\
 \text { undefined } & \text { if } \mathrm{z}=0 \\
 0 & \text { if } \mathrm{z}<0
-\end{array}\right.
+\end{array}.
 \end{array}
 $$
 
@@ -212,10 +213,10 @@ $$
 
 $$
 \begin{array}{l}
-\frac{\partial L}{\partial W^{(2)}}=\operatorname{prod}\left(\frac{\partial L}{\partial O}, \frac{\partial O}{\partial W^{(2)}}\right)=\frac{\partial L}{\partial O} \cdot h^{\top} \\
-\frac{\partial L}{\partial h}=\operatorname{prod}\left(\frac{\partial L}{\partial O}, \frac{\partial O}{\partial h}\right)=W^{(2)\top} \cdot \frac{\partial L}{\partial O} \\
-\frac{\partial L}{\partial z}=\operatorname{prod}\left(\frac{\partial L}{\partial O}, \frac{\partial O}{\partial h}, \frac{\partial h}{\partial z}\right)=\frac{\partial L}{\partial h} \odot \phi^{\prime}(Z) \\
-\frac{\partial L}{\partial W^{(1)}}=\operatorname{prod}\left(\frac{\partial L}{\partial O}, \frac{\partial O}{\partial h}, \frac{\partial h}{\partial z}, \frac{\partial z}{\partial W^{(1)}}\right)=\frac{\partial L}{\partial z} \cdot X^{\top}
+\frac{\partial L}{\partial W^{(2)}}=\operatorname{prod}(\frac{\partial L}{\partial O}, \frac{\partial O}{\partial W^{(2)}})=\frac{\partial L}{\partial O} \cdot h^{\top} \\
+\frac{\partial L}{\partial h}=\operatorname{prod}(\frac{\partial L}{\partial O}, \frac{\partial O}{\partial h})=W^{(2)\top} \cdot \frac{\partial L}{\partial O} \\
+\frac{\partial L}{\partial z}=\operatorname{prod}(\frac{\partial L}{\partial O}, \frac{\partial O}{\partial h}, \frac{\partial h}{\partial z})=\frac{\partial L}{\partial h} \odot \phi^{\prime}(Z) \\
+\frac{\partial L}{\partial W^{(1)}}=\operatorname{prod}(\frac{\partial L}{\partial O}, \frac{\partial O}{\partial h}, \frac{\partial h}{\partial z}, \frac{\partial z}{\partial W^{(1)}})=\frac{\partial L}{\partial z} \cdot X^{\top}
 \end{array}
 $$
 其中，prod(x,y) 表示x与y根据形状做必要的交换，然后相乘。$\odot$表示逐元素相乘。通过上述式子，可以容易发现，存在链式关系，即后一项的梯度可以用于前一项的梯度上。
@@ -242,7 +243,7 @@ $$
 
 沿梯度**负方向更新**：
 $$
-\boldsymbol{w}_{\mathrm{i}+1}=\boldsymbol{w}_{\mathrm{i}}-\boldsymbol{g}\left(\boldsymbol{w}_{\mathrm{i}}\right)
+\boldsymbol{w}_{\mathrm{i}+1}=\boldsymbol{w}_{\mathrm{i}}-\boldsymbol{g}(\boldsymbol{w}_{\mathrm{i}})
 $$
 例：
 $$
@@ -250,17 +251,17 @@ $$
 
 \mathrm{y}=\mathrm{f}(\mathrm{x})=4 * \mathrm{x}^{2} \\
 \mathrm{y}^{\prime}=\mathrm{f}^{\prime}(\mathrm{x})=8 * \mathrm{x} \\
-\mathrm{x}_{0}=2, \quad \mathrm{y}_{0}=16, \mathrm{f}^{\prime}\left(\mathrm{x}_{0}\right)=16 \\
-\mathrm{x}_{1}=\mathrm{x}_{0}-\mathrm{f}^{\prime}\left(\mathrm{x}_{0}\right)=2-16=-14 \\
-\mathrm{x}_{1}=-14, \quad \mathrm{y}_{1}=784, \mathrm{f}^{\prime}\left(\mathrm{x}_{1}\right)=-112 \\
-\mathrm{x}_{2}=\mathrm{x}_{1}-\mathrm{f}^{\prime}\left(\mathrm{x}_{1}\right)=-14+112=98, \quad \mathrm{y}_{2}=38416 \\
+\mathrm{x}_{0}=2, \quad \mathrm{y}_{0}=16, \mathrm{f}^{\prime}(\mathrm{x}_{0})=16 \\
+\mathrm{x}_{1}=\mathrm{x}_{0}-\mathrm{f}^{\prime}(\mathrm{x}_{0})=2-16=-14 \\
+\mathrm{x}_{1}=-14, \quad \mathrm{y}_{1}=784, \mathrm{f}^{\prime}(\mathrm{x}_{1})=-112 \\
+\mathrm{x}_{2}=\mathrm{x}_{1}-\mathrm{f}^{\prime}(\mathrm{x}_{1})=-14+112=98, \quad \mathrm{y}_{2}=38416 \\
 \end{array}
 $$
 对比：
 
-无学习率：$\boldsymbol{w}_{\mathrm{i}+1}=\boldsymbol{w}_{\mathrm{i}}-\boldsymbol{g}\left(\boldsymbol{w}_{\mathrm{i}}\right)$
+无学习率：$\boldsymbol{w}_{\mathrm{i}+1}=\boldsymbol{w}_{\mathrm{i}}-\boldsymbol{g}(\boldsymbol{w}_{\mathrm{i}})$
 
-有学习率：$\boldsymbol{w}_{\mathrm{i}+1}=\boldsymbol{w}_{\mathrm{i}}- LR * \boldsymbol{g}\left(\boldsymbol{w}_{\mathrm{i}}\right)$
+有学习率：$\boldsymbol{w}_{\mathrm{i}+1}=\boldsymbol{w}_{\mathrm{i}}- LR * \boldsymbol{g}(\boldsymbol{w}_{\mathrm{i}})$
 
 不同学习率的影响：分别为1——0.25——0.24——0.1
 
@@ -281,7 +282,7 @@ $$
 
 描述的是总体样样本\整个数据集的Loss的平均值 
 $$
-cost=\frac{\mathbf{1}}{\mathrm{N}} \sum_{i}^{N} f\left(y_{i}^{\wedge}, y_{i}\right)
+cost=\frac{\mathbf{1}}{\mathrm{N}} \sum_{i}^{N} f(y_{i}^{\wedge}, y_{i})
 $$
 ### 目标函数(Objective Function)
 
@@ -296,20 +297,20 @@ $$
 
 MSE (均方误差, Mean Squared Error)：输出与标签之差的平方的均值，常在**回归任务**中使用。计算公式：
 $$
-\mathrm{MSE}=\frac{\sum_{\mathrm{i}=1}^{\mathrm{n}}\left(\mathrm{y}_{\mathrm{i}}-\mathrm{y}_{\mathrm{i}}^{\mathrm{p}}\right)^{2}}{\mathrm{n}}
+\mathrm{MSE}=\frac{\sum_{\mathrm{i}=1}^{\mathrm{n}}(\mathrm{y}_{\mathrm{i}}-\mathrm{y}_{\mathrm{i}}^{\mathrm{p}})^{2}}{\mathrm{n}}
 $$
 公式中p代表predict。
 
 > 例: label  =(1,2)  pred  =(1.5,1.5) 
 > $$
-> \mathrm{MSE}=\frac{\left[(1-1.5)^{2}+(2-1.5)^{2}\right]}{2}=0.25
+> \mathrm{MSE}=\frac{[(1-1.5)^{2}+(2-1.5)^{2}]}{2}=0.25
 > $$
 
 #### CE
 
 CE（Cross Entropy，交叉熵) ：交叉熵源自信息论，用于衡量两个**分布**的差异，常在**分类任务**中使用。计算公式:
 $$
-\mathrm{H}(\mathrm{p}, \mathrm{q})=-\sum_{\mathrm{i}=1}^{\mathrm{n}} \mathrm{p}\left(\mathrm{x}_{\mathrm{i}}\right) \log \mathrm{q}\left(\mathrm{x}_{\mathrm{i}}\right)
+\mathrm{H}(\mathrm{p}, \mathrm{q})=-\sum_{\mathrm{i}=1}^{\mathrm{n}} \mathrm{p}(\mathrm{x}_{\mathrm{i}}) \log \mathrm{q}(\mathrm{x}_{\mathrm{i}})
 $$
 p是指真是分布，q是模型的分布，试图用q去逼近p。分布之间的距离是没有对应关系的。在给定 p 的情况下，如果 q 和 p 越接近，交叉熵越小；如果 q 和 p 越远，交叉熵就越大。
 
@@ -320,14 +321,14 @@ p是指真是分布，q是模型的分布，试图用q去逼近p。分布之间�
   **信息熵** = 所有可能取值的信息量的期望，即
 
 $$
-\mathrm{H}(\mathrm{x})=\mathrm{E}_{\mathrm{x}-\mathrm{p}}[\mathrm{I}(\mathrm{x})]=-\mathrm{E}[\log \mathrm{P}(\mathrm{x})]=-\sum_{\mathrm{i}=1}^{\mathrm{N}} \mathrm{p}_{\mathrm{i}} \log \left(\mathrm{p}_{\mathrm{i}}\right)
+\mathrm{H}(\mathrm{x})=\mathrm{E}_{\mathrm{x}-\mathrm{p}}[\mathrm{I}(\mathrm{x})]=-\mathrm{E}[\log \mathrm{P}(\mathrm{x})]=-\sum_{\mathrm{i}=1}^{\mathrm{N}} \mathrm{p}_{\mathrm{i}} \log (\mathrm{p}_{\mathrm{i}})
 $$
 
 + **相对熵**：又称**K-L散度**，**衡量两个分布之间的差异**。用概率分布 q 来近似 p 时所造成的信息损失量．KL 散度是按照概率分布q的最优编码对真实分布为p的信息进行编码，其平均编码长度（即交叉熵）𝐻(p, q) 和 p 的最优平均编码长度（即熵）𝐻(p) 之间的差异．
   $$
   \begin{aligned}
-  \mathrm{D}_{\mathrm{KL}}(\mathrm{P} \| \mathrm{Q})=\mathrm{E}_{\mathrm{x} \sim \mathrm{p}}\left[\log \frac{\mathrm{P}(\mathrm{x})}{\mathrm{Q}(\mathrm{x})}\right] & =\mathrm{E}_{\mathrm{x}-\mathrm{p}}[\log \mathrm{P}(\mathrm{x})-\log \mathrm{Q}(\mathrm{x})] \\
-  & =\sum_{\mathrm{i}=1}^{\mathrm{N}} \mathrm{P}\left(\mathrm{x}_{\mathrm{i}}\right)\left(\log \mathrm{P}\left(\mathrm{x}_{\mathrm{i}}\right)-\log \mathrm{Q}\left(\mathrm{x}_{\mathrm{i}}\right)\right)
+  \mathrm{D}_{\mathrm{KL}}(\mathrm{P} \| \mathrm{Q})=\mathrm{E}_{\mathrm{x} \sim \mathrm{p}}[\log \frac{\mathrm{P}(\mathrm{x})}{\mathrm{Q}(\mathrm{x})}] & =\mathrm{E}_{\mathrm{x}-\mathrm{p}}[\log \mathrm{P}(\mathrm{x})-\log \mathrm{Q}(\mathrm{x})] \\
+  & =\sum_{\mathrm{i}=1}^{\mathrm{N}} \mathrm{P}(\mathrm{x}_{\mathrm{i}})(\log \mathrm{P}(\mathrm{x}_{\mathrm{i}})-\log \mathrm{Q}(\mathrm{x}_{\mathrm{i}}))
   \end{aligned}
   $$
 
@@ -340,8 +341,8 @@ $$
 > ![](https://raw.githubusercontent.com/timerring/scratchpad2023/main/2023/image-20230626164444697.png)
 > $$
 > \begin{array}{l}
-> \mathrm{H}(\mathrm{p}, \mathrm{q})=-\sum_{\mathrm{i}=1}^{\mathrm{n}} \mathrm{p}\left(\mathrm{x}_{\mathrm{i}}\right) \log \mathrm{q}\left(\mathrm{x}_{\mathrm{i}}\right)\\
-> \operatorname{loss}=-\left(0^{\star} \log (0.05)+0^{\star} \log (0.1)+1^{\star} \log (0.7)+0^{\star} \log (0.15)\right)=0.36
+> \mathrm{H}(\mathrm{p}, \mathrm{q})=-\sum_{\mathrm{i}=1}^{\mathrm{n}} \mathrm{p}(\mathrm{x}_{\mathrm{i}}) \log \mathrm{q}(\mathrm{x}_{\mathrm{i}})\\
+> \operatorname{loss}=-(0^{\star} \log (0.05)+0^{\star} \log (0.1)+1^{\star} \log (0.7)+0^{\star} \log (0.15))=0.36
 > \end{array}
 > $$
 
@@ -399,7 +400,7 @@ $$
 
 + Xavier初始化：《Understanding the difficulty of training deep feedforward neural networks 》2010
   $$
-  \mathrm{U}\left(-\sqrt{\frac{6}{a+b}}, \sqrt{\frac{6}{a+b}}\right)
+  \mathrm{U}(-\sqrt{\frac{6}{a+b}}, \sqrt{\frac{6}{a+b}})
   $$
   a是输入神经元的个数，b是输出神经元的个数。假设$-\sqrt\frac{6}{a+b}$为A，$\sqrt\frac{6}{a+b}$为B，则可知$\frac{A+B}{2}=mean=0$，$std=\sqrt\frac{(B-A)^2}{12}$。
 
@@ -425,7 +426,7 @@ $$
 $$
 代价函数 (Cost Function)：描述的是总体样样本\整个数据集的Loss的平均值
 $$
-\text { Cost }=\frac{1}{N} \sum_{i}^{N} \mathrm{f}\left({\hat{y_{i}}}, \mathrm{y}_{\mathrm{i}}\right)
+\text { Cost }=\frac{1}{N} \sum_{i}^{N} \mathrm{f}({\hat{y_{i}}}, \mathrm{y}_{\mathrm{i}})
 $$
 目标函数(Objective Function)：模型输出与标签之间的差异+正则项（约束）控制模型复杂度防止过拟合现象。
 
@@ -459,7 +460,7 @@ $$
 有正则项: 
 $$
 \begin{aligned}
-\mathrm{w}_{\mathrm{i}+1}=\mathrm{w}_{\mathrm{i}}-\frac{\partial \mathrm{obj}}{\partial \mathrm{w}_{\mathrm{i}}}=\mathrm{w}_{\mathrm{i}} & -\left(\frac{\partial \mathrm{Loss}}{\partial \mathrm{w}_{\mathrm{i}}}+\lambda^{*} \mathrm{w}_{\mathrm{i}}\right) \\
+\mathrm{w}_{\mathrm{i}+1}=\mathrm{w}_{\mathrm{i}}-\frac{\partial \mathrm{obj}}{\partial \mathrm{w}_{\mathrm{i}}}=\mathrm{w}_{\mathrm{i}} & -(\frac{\partial \mathrm{Loss}}{\partial \mathrm{w}_{\mathrm{i}}}+\lambda^{*} \mathrm{w}_{\mathrm{i}}) \\
 & =\mathrm{w}_{\mathrm{i}}(1-\lambda)-\frac{\partial \mathrm{Loss}}{\partial \mathrm{w}_{\mathrm{i}}}
 \end{aligned}
 $$
