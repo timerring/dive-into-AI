@@ -1,14 +1,14 @@
-# pytorch-for-beginners
+# dive-into-AI
 
 ## 简介
 
-> Python and pytorch tutorials based on quick-start practical projects even start from zero.
+> AI tutorials based on quick-start practical projects even start from zero.
 
-基于快速入门实践项目的Python和PyTorch教程，即使你是从零开始的初学者。
+基于快速入门实践项目的AI教程，即使你是从零开始的初学者。
 
 ## python-brief-tutorial
 
-| Articles                                                     | code                                                         |
+| articles                                                     | code                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [CH1 - python基本语法元素](https://github.com/timerring/pytorch-for-beginners/blob/main/python-brief-tutorial/CH1%20-%20Python%20Basic%20Syntax%20Elements/CH1-Note.md) | [code](https://github.com/timerring/pytorch-for-beginners/blob/main/python-brief-tutorial/CH1%20-%20Python%20Basic%20Syntax%20Elements/CH1-Code.ipynb) |
 | [CH2 - python基本数据类型](https://github.com/timerring/pytorch-for-beginners/blob/main/python-brief-tutorial/CH2%20-%20Python%20Basic%20Data%20Types/CH2-Note.md) | [code](https://github.com/timerring/pytorch-for-beginners/blob/main/python-brief-tutorial/CH2%20-%20Python%20Basic%20Data%20Types/CH2-Code.ipynb) |
@@ -29,59 +29,11 @@
 
 Coming soon...
 
+## neural_network_basics
 
-
-## 文件结构
-
-```
-.
-|-- LICENSE
-|-- README.md
-`-- python-brief-tutorial
-    |-- CH1 - Python Basic Syntax Elements
-    |   |-- CH1-Code.ipynb
-    |   `-- CH1-Note.md
-    |-- CH10 - Numpy Library
-    |   |-- CH10-Code.ipynb
-    |   `-- CH10-Note.md
-    |-- CH11 - Pandas Library
-    |   |-- CH11-Code.ipynb
-    |   `-- CH11-Note.md
-    |-- CH12 - Matplotlib Library
-    |   |-- CH12-Code.ipynb
-    |   `-- CH12-Note.md
-    |-- CH13 - Scikit-learn Library
-    |   |-- CH13-Code.ipynb
-    |   `-- CH13-Note.md
-    |-- CH14 - Time and Space Complexity
-    |   |-- CH14-Code.ipynb
-    |   `-- CH14-Note.md
-    |-- CH2 - Python Basic Data Types
-    |   |-- CH2-Code.ipynb
-    |   `-- CH2-Note.md
-    |-- CH3 - Python Composite Data Types
-    |   |-- CH3-Code.ipynb
-    |   `-- CH3-Note.md
-    |-- CH4 - Program Control Structure
-    |   |-- CH4-Code.ipynb
-    |   `-- CH4-Note.md
-    |-- CH5 - Function
-    |   |-- CH5-Code.ipynb
-    |   `-- CH5-Note.md
-    |-- CH6 - Object Oriented Programming
-    |   |-- CH6-Code.ipynb
-    |   `-- CH6-Note.md
-    |-- CH7 - Files, Exceptions and Modules
-    |   |-- CH7-Code.ipynb
-    |   `-- CH7-Note.md
-    |-- CH8 - Generators, Iterators and Decorators
-    |   |-- CH8-Code.ipynb
-    |   `-- CH8-Note.md
-    `-- CH9 - Python Standard Library
-        |-- CH9-Code.ipynb
-        `-- CH9-Note.md
-
-```
+| articles | content |
+| -------- | ------- |
+|          |         |
 
 
 
