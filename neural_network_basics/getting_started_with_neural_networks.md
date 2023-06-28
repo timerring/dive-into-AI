@@ -261,10 +261,13 @@ $$
 $$
 \boldsymbol{w}_{\mathrm{i}+1}=\boldsymbol{w}_{\mathrm{i}}-\boldsymbol{g}(\boldsymbol{w}_{\mathrm{i}})
 $$
+
+
 例：
+
+
 $$
 \begin{array}{l}
-
 \mathrm{y}=\mathrm{f}(\mathrm{x})=4 * \mathrm{x}^{2} \\
 \mathrm{y}^{\prime}=\mathrm{f}^{\prime}(\mathrm{x})=8 * \mathrm{x} \\
 \mathrm{x}_{0}=2, \quad \mathrm{y}_{0}=16, \mathrm{f}^{\prime}(\mathrm{x}_{0})=16 \\
@@ -273,6 +276,7 @@ $$
 \mathrm{x}_{2}=\mathrm{x}_{1}-\mathrm{f}^{\prime}(\mathrm{x}_{1})=-14+112=98, \quad \mathrm{y}_{2}=38416 \\
 \end{array}
 $$
+
 对比：
 
 无学习率：$\boldsymbol{w}_{\mathrm{i}+1}=\boldsymbol{w}_{\mathrm{i}}-\boldsymbol{g}(\boldsymbol{w}_{\mathrm{i}})$
