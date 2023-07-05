@@ -29,11 +29,11 @@
 
 Coming soon...
 
-## neural_network_basics
+## neural-network-basics
 
 | articles                                                     | content                                                      |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [神经网络入门](https://github.com/timerring/dive-into-AI/blob/main/neural_network_basics/getting_started_with_neural_networks.md#神经网络入门) | [人工神经元](https://github.com/timerring/dive-into-AI/blob/main/neural_network_basics/getting_started_with_neural_networks.md#人工神经元) \| [多层感知机](https://github.com/timerring/dive-into-AI/blob/main/neural_network_basics/getting_started_with_neural_networks.md#多层感知机) \| [激活函数](https://github.com/timerring/dive-into-AI/blob/main/neural_network_basics/getting_started_with_neural_networks.md#激活函数) \| [反向传播（Back Propagation）](https://github.com/timerring/dive-into-AI/blob/main/neural_network_basics/getting_started_with_neural_networks.md#反向传播back-propagation) \| [损失函数（Loss Function）](https://github.com/timerring/dive-into-AI/blob/main/neural_network_basics/getting_started_with_neural_networks.md#损失函数loss-function) \| [权值初始化（Initialization）](https://github.com/timerring/dive-into-AI/blob/main/neural_network_basics/getting_started_with_neural_networks.md#权值初始化initialization) \| [正则化（Regularization）](https://github.com/timerring/dive-into-AI/blob/main/neural_network_basics/getting_started_with_neural_networks.md#正则化regularization) |
+| [神经网络入门](https://github.com/timerring/dive-into-AI/blob/main/neural-network-basics/getting_started_with_neural_networks.md#神经网络入门) | [人工神经元](https://github.com/timerring/dive-into-AI/blob/main/neural-network-basics/getting_started_with_neural_networks.md#人工神经元) \| [多层感知机](https://github.com/timerring/dive-into-AI/blob/main/neural-network-basics/getting_started_with_neural_networks.md#多层感知机) \| [激活函数](https://github.com/timerring/dive-into-AI/blob/main/neural-network-basics/getting_started_with_neural_networks.md#激活函数) \| [反向传播（Back Propagation）](https://github.com/timerring/dive-into-AI/blob/main/neural-network-basics/getting_started_with_neural_networks.md#反向传播back-propagation) \| [损失函数（Loss Function）](https://github.com/timerring/dive-into-AI/blob/main/neural-network-basics/getting_started_with_neural_networks.md#损失函数loss-function) \| [权值初始化（Initialization）](https://github.com/timerring/dive-into-AI/blob/main/neural-network-basics/getting_started_with_neural_networks.md#权值初始化initialization) \| [正则化（Regularization）](https://github.com/timerring/dive-into-AI/blob/main/neural-network-basics/getting_started_with_neural_networks.md#正则化regularization) |
 
 
 
