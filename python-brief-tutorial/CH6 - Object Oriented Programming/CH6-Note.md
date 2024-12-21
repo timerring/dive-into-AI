@@ -670,4 +670,4 @@ my_electric_car.bettery.get_remainder_range()           # 获取当前剩余可�
 
 
 
-[返回首页](https://github.com/timerring/pytorch-for-beginners)
+[返回首页](https://github.com/timerring/dive-into-AI)
