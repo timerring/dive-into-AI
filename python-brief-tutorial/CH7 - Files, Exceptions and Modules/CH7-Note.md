@@ -1064,4 +1064,4 @@ fun3.f3()
 
 
 
-[返回首页](https://github.com/timerring/pytorch-for-beginners)
+[返回首页](https://github.com/timerring/dive-into-AI)
