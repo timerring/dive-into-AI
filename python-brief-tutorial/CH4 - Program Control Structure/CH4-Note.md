@@ -623,4 +623,4 @@ if judge(numbers):
 
 
 
-[返回首页](https://github.com/timerring/pytorch-for-beginners)
+[返回首页](https://github.com/timerring/dive-into-AI)
